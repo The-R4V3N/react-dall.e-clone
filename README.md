@@ -22,7 +22,7 @@
   
 ## Welcome! Glad to see you here  
 
-## react-dalle-clone
+## react-dall.e-clone
 
   ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
@@ -42,22 +42,22 @@ You have the option to generate images or allow the application to provide surpr
 
 ## Getting Started
 
-    - Clone this repository to your local machine.
-    - Set up your development environment and ensure you have the necessary dependencies installed.
-    - You can install the necessary dependencies with:
+  - Clone this repository to your local machine.
+  - Set up your development environment and ensure you have the necessary dependencies installed.
+  - You can install the necessary dependencies with:
  
-    - Install Node.js from the [official Website](https://nodejs.org) if you dont have it already
+  - Install Node.js from the [official Website](https://nodejs.org) if you dont have it already
   
 ### In the project  directory run
 
  `npm install` to install the necessary dependencies
 
-    - Get your Api Key from [openai](https://openai.com/api/)
-    - Create an account or login to openai, and then click on your profile and the API tab. Once there, you can generate a new API key.
+  - Get your Api Key from [openai](https://openai.com/api/)
+  - Create an account or login to openai, and then click on your profile and the API tab. Once there, you can generate a new API key.
   
-    - Rename .env.example to .env and place your API-Key inside save it. 
+  - Rename .env.example to .env and place your API-Key inside save it. 
 
-   Now you are ready to use it
+  Now you are ready to use it
   
 ## Usage
 
