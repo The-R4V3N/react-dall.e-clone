@@ -126,7 +126,7 @@ This project is licensed under the MIT License. Feel free to use and modify the 
 
 ## Future
 
- In the future, this clone will possess advanced capabilities in image editing, augmenting its professional functionality.
+ In the forthcoming era, this clone will embody enhanced proficiencies in image editing, thereby augmenting its professional functionality to new heights. Furthermore, the incorporation of a dark theme might be considered to provide a visually sophisticated experience.
   
 - 👨‍💻 All about me is at [My Website](https://www.oliver-joisten.se/)
 
