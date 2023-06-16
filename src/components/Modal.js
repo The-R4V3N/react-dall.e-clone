@@ -6,7 +6,7 @@ const Modal = ({ setModalOpen, setSelectedImage, selectedImage, generateVariatio
     const ref = useRef(null)
 
     //This console.log is for debugging purposes
-// console.log('selectedImage', selectedImage)
+console.log('selectedImage', selectedImage)
 
 // Close modal and reset selected image
     const closeModal = () => {
