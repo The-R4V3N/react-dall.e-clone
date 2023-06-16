@@ -35,6 +35,7 @@ This repository contains a DALL·E clone made in React
 - [Usage](#usage)
 - [Contributing](#contributing)
 - [License](#license)
+- [Future of the project](#future)
   
 ## Features
 
@@ -114,6 +115,10 @@ Contributions are welcome! If you have any ideas, suggestions, or improvements, 
 ## License
 
 This project is licensed under the MIT License. Feel free to use and modify the code according to the terms of the license.
+
+## Future
+
+ In the future, this clone will possess advanced capabilities in image editing, augmenting its professional functionality.
   
 - 👨‍💻 All about me is at [My Website](https://www.oliver-joisten.se/)
 
