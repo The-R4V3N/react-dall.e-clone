@@ -47,7 +47,7 @@ This images shows how it looks when images are generated.
 
 This shows how the site looks when no images are generated.
 
-![Blank page with basic layout](image-2.png)
+![Blank page with a basic layout](image-2.png)
 
 This shows how the modal looks when you upload an image.
 
