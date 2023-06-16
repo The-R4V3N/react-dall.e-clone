@@ -145,7 +145,8 @@ const App = () => {
           />
           <button onClick={getImages}>Generate</button>
         </div>
-        <p className="extra-info">
+        <div className="upload-button-container">
+        <button className="upload-button"><p className="extra-info">
           Or,
           <span>
             <label htmlFor="files"> upload an image </label>
@@ -158,7 +159,8 @@ const App = () => {
             />
           </span>
           to edit.
-        </p>
+        </p></button>
+        </div>
         {error && <p>{error}</p>}
 
         {modalOpen && (
