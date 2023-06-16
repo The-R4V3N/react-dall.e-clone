@@ -1,16 +1,20 @@
 import { useState, useRef } from 'react'
 
+// Modal component that displays the selected image and a button to generate variations
 const Modal = ({ setModalOpen, setSelectedImage, selectedImage, generateVariations }) => {
     const [error, setError] = useState(null)
     const ref = useRef(null)
 
-console.log('selectedImage', selectedImage)
+    //This console.log is for debugging purposes
+// console.log('selectedImage', selectedImage)
 
+// Close modal and reset selected image
     const closeModal = () => {
         setModalOpen(false)
         setSelectedImage(null)
     }
 
+    // Check image size and generate variations
     const checkSize = () => {
         if (ref.current.width == 256 && ref.current.height == 256) {
             generateVariations()
@@ -18,6 +22,8 @@ console.log('selectedImage', selectedImage)
             setError('ERROR! Image size must be at least 256x256')
         }
     }
+
+    // Display selected image and button to generate variations
     return(
         <div className='modal'>
             <div className='close' onClick={closeModal}>❌</div>

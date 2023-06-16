@@ -9,6 +9,7 @@ const fs = require('fs')
 const multer = require('multer')
 const { Configuration, OpenAIApi } = require('openai')
 
+// Image upload configuration
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
         cb(null, 'uploads')
@@ -18,15 +19,16 @@ const storage = multer.diskStorage({
         cb(null, Date.now() + '-' + file.originalname)
     }
 })
-
 const upload = multer({ storage: storage}).single('file')
 let filePath
 
+// OpenAI configuration
 const configuration = new Configuration({
     apiKey: process.env.OPENAI_API_KEY,
 })
 const openai = new OpenAIApi(configuration)
 
+// Text generation function
 app.post('/images', async (req, res) => {
     try {
         const response = await openai.createImage({
@@ -47,6 +49,7 @@ app.post('/images', async (req, res) => {
     })
 })
 
+// Image upload function
 app.post('/upload', async (req, res) => {
     upload(req, res, (err) => {
         if(err instanceof multer.MulterError) {
@@ -58,6 +61,7 @@ app.post('/upload', async (req, res) => {
     })
 })
 
+// Image variation function
 app.post('/variations', async (req, res) => {
     try {
         const response = await openai.createImageVariation(
