@@ -23,10 +23,13 @@
 ## Welcome! Glad to see you here  
 
 ## react-dall.e-clone
+![Gernerated images](image.png)
 
   ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 This repository contains a DALL·E clone made in React
+
+![Upload Modal](image-1.png)
   
 ## Table of Contents
 
