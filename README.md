@@ -43,9 +43,11 @@ You have the option to generate 1 to 10 images or allow the application to provi
 
 ![Generated Images](image.png)
 
+![Blank page with basic layout](image-2.png)
+
 ![Upload Modal](image-1.png)
 
-![Blank page with basic layout](image-2.png)
+
 
 ## Getting Started
 
