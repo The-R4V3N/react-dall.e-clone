@@ -50,7 +50,7 @@ You have the option to generate 1 to 10 images or allow the application to provi
   - Clone this repository to your local machine.
   - Set up your development environment and ensure you have the necessary dependencies installed.
   - You can install the necessary dependencies with:
- 
+
   - Install Node.js from the [official Website](https://nodejs.org) if you dont have it already
   
 ### In the project  directory run
