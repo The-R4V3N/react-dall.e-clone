@@ -47,8 +47,6 @@ You have the option to generate 1 to 10 images or allow the application to provi
 
 ![Upload Modal](image-1.png)
 
-
-
 ## Getting Started
 
   - Clone this repository to your local machine.
