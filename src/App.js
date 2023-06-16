@@ -43,7 +43,7 @@ const App = () => {
       }
       const response = await fetch('http://localhost:8000/images', options)
       const data = await response.json()
-      console.log(data)
+      // console.log(data) // This console.log is for debugging purposes
       setImages(data)
     } catch (error) {
       console.error(error)
@@ -51,7 +51,7 @@ const App = () => {
   }
 
   const uploadImage = async (e) => {
-      console.log(e.target.files[0])
+      // console.log(e.target.files[0]) // This console.log is for debugging purposes
 
       const formData = new FormData()
       formData.append('file', e.target.files[0])
@@ -65,7 +65,7 @@ const App = () => {
           }
           const response = await fetch('http://localhost:8000/upload', options)
           const data = await response.json()
-          console.logd(data)
+          // console.logd(data) // This console.log is for debugging purposes
       } catch (error) {
         console.error(error)
     }
@@ -84,7 +84,7 @@ const App = () => {
           }
           const response = await fetch('http://localhost:8000/variations', options) 
           const data = await response.json()
-          console.log(data)
+          // console.log(data) // This console.log is for debugging purposes
           setImages(data)
           setError(null)
           setModalOpen(false)

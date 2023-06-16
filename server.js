@@ -12,10 +12,10 @@ const { Configuration, OpenAIApi } = require('openai')
 // Image upload configuration
 const storage = multer.diskStorage({
     destination: (req, file, cb) => {
-        cb(null, 'uploads')
+        cb(null, 'uploads') // change the name of the folder you want to upload to
     },
     filename:(req, file, cb) => {
-        console.log(file)
+       // console.log(file) // this console.log is for debugging purposes
         cb(null, Date.now() + '-' + file.originalname)
     }
 })
@@ -28,15 +28,15 @@ const configuration = new Configuration({
 })
 const openai = new OpenAIApi(configuration)
 
-// Text generation function
+// Image generation function
 app.post('/images', async (req, res) => {
     try {
         const response = await openai.createImage({
             prompt: req.body.message,
-            n: 2, // change the numbr of images you want to generate min is 1 and max is 10
-            size: '256x256', // size of the image change it to one of these 3 options 256x256, 512x512, 1024x1024
+            n: 6, // change the numbr of images you want to generate min is 1 and max is 10
+            size: '512x512', // size of the image change it to one of these 3 options 256x256, 512x512, 1024x1024
         })
-        console.log(response.data.data)
+       // console.log(response.data.data) // this console.log is for debugging purposes
         res.send(response.data.data)
 
     } catch (error) {
@@ -44,8 +44,8 @@ app.post('/images', async (req, res) => {
     }
     const response = await openai.createImage({
     prompt: '',
-    n: 2,
-    size: '1024x1024',
+    n: 6, // change the numbr of images you want to generate min is 1 and max is 10
+    size: '1024x1024', // size of the image change it to one of these 3 options 256x256, 512x512, 1024x1024
     })
 })
 

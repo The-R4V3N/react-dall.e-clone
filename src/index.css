@@ -132,6 +132,7 @@ p {
 
 .modal .close {
   cursor: pointer;
+  padding-bottom: 10px;
 }
 
 .modal button {
@@ -148,7 +149,18 @@ p {
 }
 
 .image-container {
-  height: 256px;
-  width: 256px;
+  height: 512px;
+  width: 512px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   overflow: hidden;
+}
+
+p.error {
+  color: rgba(204, 0, 0, 0.753);
+  font-size: 16px;
+  font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
 }

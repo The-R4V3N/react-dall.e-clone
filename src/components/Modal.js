@@ -16,10 +16,10 @@ const Modal = ({ setModalOpen, setSelectedImage, selectedImage, generateVariatio
 
     // Check image size and generate variations
     const checkSize = () => {
-        if (ref.current.width == 256 && ref.current.height == 256) {
+        if (ref.current.width == 256 && ref.current.height == 256 || ref.current.width == 512 && ref.current.height == 512 || ref.current.width == 1024 && ref.current.height == 1024) {
             generateVariations()
         } else {
-            setError('ERROR! Image size must be at least 256x256')
+            setError('ERROR! Image size must be 256x256, 512x512, or 1024x1024 px.')
         }
     }
 
@@ -30,7 +30,7 @@ const Modal = ({ setModalOpen, setSelectedImage, selectedImage, generateVariatio
             <div className='image-container'>
                 {selectedImage && <img ref={ref} src={URL.createObjectURL(selectedImage)} alt='uploaded image'/>}
             </div>
-            <p>{error || '* Image must be 256 x 256'}</p>
+            <p className='error'>{error || '* Image must be exactly 256 x 256, 512 x 512 or 1024 x 1024 px.'}</p>
             {! error && <button onClick={checkSize}>Generate</button>}
             {error && <button onClick={closeModal}>Close this and try again</button>}
         </div>
