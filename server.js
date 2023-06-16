@@ -63,10 +63,10 @@ app.post("/upload", async (req, res) => {
 // Image variation function
 app.post("/variations", async (req, res) => {
   try {
-    // const numImages = parseInt(req.body.numImages) //! The slider does not work at the moment for the uploaded image variation there is a bugg
+    // const numImages = parseInt(req.body.numImages) //! The slider does not work at the moment for the uploaded image variation there is a bugg wwich is resulting in a 500 API Server error.
     const response = await openai.createImageVariation(
       fs.createReadStream(filePath),
-      //numImages, //! This variable is not used at the moment for the uploaded image variation there is a bugg
+      //numImages, //! This variable is not used at the moment for the uploaded image variation there is a bugg wwich is resulting in a 500 API Server error.
       6,
       "512x512" // size of the image change it to one of these 3 options 256x256, 512x512, 1024x1024
     );
