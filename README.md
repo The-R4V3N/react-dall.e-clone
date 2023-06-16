@@ -23,13 +23,10 @@
 ## Welcome! Glad to see you here  
 
 ## react-dall.e-clone
-![Gernerated images](image.png)
 
   ![License](https://img.shields.io/badge/license-MIT-blue.svg)
 
 This repository contains a DALL·E clone made in React
-
-![Upload Modal](image-1.png)
   
 ## Table of Contents
 
@@ -42,6 +39,10 @@ This repository contains a DALL·E clone made in React
 ## Features
 
 You have the option to generate images or allow the application to provide surprising results. Additionally, you can upload your own image and utilize the app to create diverse variations based on it.
+
+![Gernerated images](image.png)
+
+![Upload Modal](image-1.png)
 
 ## Getting Started
 
