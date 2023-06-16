@@ -41,9 +41,15 @@ This repository contains a DALL·E clone made in React
 
 You have the option to generate 1 to 10 images or allow the application to provide surprising results. Additionally, you can upload your own image and utilize the app to create up to 10 diverse variations based on it.
 
+This images shows how it looks when images are generated.
+
 ![Generated Images](image.png)
 
+This shows how the site looks when no images are generated.
+
 ![Blank page with basic layout](image-2.png)
+
+This shows how the modal looks when you upload an image.
 
 ![Upload Modal](image-1.png)
 
