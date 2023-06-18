@@ -220,7 +220,7 @@ const App = () => {
         ))}
       </section>
       <section className="footer">
-        <p>Made by The-R4V3N</p>
+        <p>Made by <a href="https://github.com/The-R4V3N">The-R4V3N</a></p>
       </section>
     </div>
   )
