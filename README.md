@@ -25,6 +25,7 @@
 ## react-dall.e-clone
 
   ![License](https://img.shields.io/badge/license-MIT-blue.svg)
+  ![Lines of code](https://tokei.rs/b1/github/The-R4V3N/react-dall.e-clone)
 
 This repository contains a DALL·E clone made in React
   
